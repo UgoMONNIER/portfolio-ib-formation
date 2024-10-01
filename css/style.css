@@ -1,0 +1,22 @@
+
+.spacer{
+    background-color: #000000;
+    opacity: 0.8;
+    background-image: linear-gradient(to right, #d6d6d6, #d6d6d6 6px, #000000 6px, #000000 );
+    background-size: 12px 100%;
+
+}
+
+.background-image-meshPat1 {
+    background-image: url('../asset/meshPat1.png'); /* Remplacez par le chemin de votre image */
+    height: 1vh; /* Hauteur de l'élément */
+    background-size: cover; /* Redimensionne l'image pour couvrir tout l'élément */
+    background-position: center; /* Centre l'image */
+    background-repeat: repeat; /* Ne répète pas l'image */
+    display: flex; /* Pour centrer le contenu */
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    color: white; /* Couleur du texte */
+    text-shadow: 1px 1px 2px black; /* Ombre pour le texte */
+    mix-blend-mode: multiply;
+}
