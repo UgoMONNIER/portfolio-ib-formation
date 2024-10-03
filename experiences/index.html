@@ -9,6 +9,7 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <link href="./css/style-experiences.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -48,65 +49,6 @@
       </div>
     </nav>
 
-    <!-- Experiences Section -->
-    <section id="experiences" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Mes Expériences</h2>
-        <div class="row">
-          <!-- Nokia Experience Card -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="asset/nokia.png" class="card-img-top" alt="Nokia" />
-              <div class="card-body">
-                <h5 class="card-title">Nokia</h5>
-                <p class="card-text">
-                  Développeur logiciel chez Nokia, travaillant sur des solutions
-                  réseau innovantes.
-                </p>
-                <a href="experiences/nokia/index.html" class="btn btn-dark"
-                  >Voir plus</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Scallog Experience Card -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="asset/scallog.png" class="card-img-top" alt="Scallog" />
-              <div class="card-body">
-                <h5 class="card-title">Scallog</h5>
-                <p class="card-text">
-                  Ingénieur en solutions robotiques pour la logistique
-                  automatisée chez Scallog.
-                </p>
-                <a href="experiences/scallog/index.html" class="btn btn-dark"
-                  >Voir plus</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Thales Experience Card -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="asset/thales.png" class="card-img-top" alt="Thales" />
-              <div class="card-body">
-                <h5 class="card-title">Thales</h5>
-                <p class="card-text">
-                  Développeur logiciel chez Thales, spécialisé en solutions de
-                  défense.
-                </p>
-                <a href="experiences/thales/index.html" class="btn btn-dark"
-                  >Voir plus</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <div class="container my-5" id="experiences">
       <h3 class="text-center mb-4">Mes Expériences Professionnelles</h3>
       <p class="text-center mb-5">
@@ -114,100 +56,241 @@
       </p>
 
       <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 text-center">
+        <!-- Carte 1: Master en Informatique -->
+        <div
+          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div
+            style="max-width: 300px"
+            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
+          >
             <img
-              src="./asset/master_computer_science.jpg"
+              src="../asset/logo-emse.jpg"
               class="card-img-top"
               alt="Master Computer Science"
+              style="max-width: 300px"
             />
-            <div class="card-body">
+            <div
+              class="card-body d-flex flex-column justify-content-center align-items-center"
+              style="max-width: 300px"
+            >
               <h5 class="card-title">Master en Informatique</h5>
               <p class="card-text">
                 J’ai obtenu un Master en Informatique à l’École des Mines de
                 Saint-Étienne, spécialisé en hyperfréquences. Technologies : C,
                 C++, Java, Python, MySQL, Symfony.
               </p>
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                En savoir plus
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade custom-blur-modal"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Master en Informatique
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../asset/modal-emse.png"
+                        class="p-2"
+                        alt="Master Computer Science"
+                        style="max-width: 100px"
+                      />
+                      <div class="row">
+                        <p>
+                          L'École des Mines de Saint-Étienne forme des
+                          ingénieurs innovants et adaptables pour répondre aux
+                          défis modernes. Le diplôme ISMIN, spécialisé en
+                          microélectronique, offre une formation de pointe sur
+                          un campus high-tech en Provence, en lien avec un
+                          environnement industriel dynamique. Le programme allie
+                          prestige, innovation et rigueur pour un parcours
+                          réussi.
+                        </p>
+                        <p>
+                          Le cursus ISMIN forme des ingénieurs polyvalents en
+                          microélectronique et informatique avec un fort accent
+                          sur l'innovation. Les étudiants travaillent sur des
+                          projets concrets en Java, Python, C++, UML, C et bases
+                          de données, développant des compétences en
+                          programmation et en modélisation physique alliant
+                          science de l'ingénieur et informatique. Le programme
+                          intègre aussi des modules en marketing digital et en
+                          management des systèmes d'information pour une vision
+                          globale de l'entreprise. Les communications entre API
+                          sont abordées pour maîtriser l'interopérabilité des
+                          systèmes, et les projets favorisent l'autonomie, la
+                          créativité et la collaboration en équipe.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Fermer
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 text-center">
+
+        <!-- Carte 2: Développeur Fullstack SEO -->
+        <div
+          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div
+            style="max-width: 300px"
+            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
+          >
             <img
-              src="./asset/developpeur_fullstack.jpg"
+              src="../asset/cropped-Logo_Velcome.jpeg"
               class="card-img-top"
               alt="Développeur Fullstack SEO"
+              style="max-width: 300px"
             />
-            <div class="card-body">
+            <div class="card-body" style="max-width: 300px">
               <h5 class="card-title">Développeur Fullstack SEO chez Velcome</h5>
               <p class="card-text">
                 Développement de sites WordPress avec React et optimisation SEO.
                 Gestion de plusieurs projets e-commerce.
               </p>
+              <a href="experiences/thales/index.html" class="btn btn-dark"
+                >Voir plus</a
+              >
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 text-center">
+
+        <!-- Carte 3: Développeur Fullstack chez Conex Santé -->
+        <div
+          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div
+            style="max-width: 300px"
+            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
+          >
             <img
-              src="../asset/developpeur_fullstack_conex.jpg"
+              src="../asset/logo_conex_sante.jpg"
               class="card-img-top"
-              alt="Développeur Fullstack"
+              alt="Développeur Fullstack chez Conex Santé"
+              style="max-width: 300px"
             />
-            <div class="card-body">
+            <div class="card-body" style="max-width: 300px">
               <h5 class="card-title">Développeur Fullstack chez Conex Santé</h5>
               <p class="card-text">
                 Participation au développement d’une API REST avec React et
                 Symfony pour une plateforme médicale.
               </p>
+              <a href="experiences/thales/index.html" class="btn btn-dark"
+                >Voir plus</a
+              >
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 text-center">
+
+        <!-- Carte 4: Ingénieur Avant Vente chez Scallog -->
+        <div
+          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div
+            style="max-width: 300px"
+            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
+          >
             <img
               src="../asset/Scallog.png"
               class="card-img-top"
-              alt="Ingénieur Avant Vente"
+              alt="Ingénieur Avant Vente chez Scallog"
+              style="max-width: 300px"
             />
-            <div class="card-body">
+            <div class="card-body" style="max-width: 300px">
               <h5 class="card-title">Ingénieur Avant Vente chez Scallog</h5>
               <p class="card-text">
                 Analyse des besoins clients et rédaction de propositions
                 commerciales pour des solutions technologiques.
               </p>
+              <a href="experiences/thales/index.html" class="btn btn-dark"
+                >Voir plus</a
+              >
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 text-center">
+
+        <!-- Carte 5: Ingénieur Avant Vente chez Nokia -->
+        <div
+          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div
+            style="max-width: 300px"
+            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
+          >
             <img
               src="../asset/nokia.jpg"
               class="card-img-top"
               alt="Ingénieur Avant Vente chez Nokia"
+              style="max-width: 300px"
             />
-            <div class="card-body">
+            <div class="card-body" style="max-width: 300px">
               <h5 class="card-title">Ingénieur Avant Vente chez Nokia</h5>
               <p class="card-text">
                 Gestion du pipeline Salesforce et élaboration de prévisions
                 financières pour le département.
               </p>
+              <a href="experiences/thales/index.html" class="btn btn-dark"
+                >Voir plus</a
+              >
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 text-center">
+
+        <!-- Carte 6: Ingénieur Fullstack chez Thales -->
+        <div
+          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div
+            style="max-width: 300px"
+            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
+          >
             <img
-              src="./asset/ingenieur_fullstack_thales.jpg"
+              src="../asset/logo-Thales-cropped.jpg"
               class="card-img-top"
               alt="Ingénieur Fullstack chez Thales"
+              style="max-width: 300px"
             />
-            <div class="card-body">
+            <div class="card-body" style="max-width: 300px">
               <h5 class="card-title">Ingénieur Fullstack chez Thales</h5>
               <p class="card-text">
                 Automatisation des tests des cartes haute fréquence avec Python
                 et JavaScript, travail en méthodologie Kanban.
               </p>
+              <a href="experiences/thales/index.html" class="btn btn-dark"
+                >Voir plus</a
+              >
             </div>
           </div>
         </div>
