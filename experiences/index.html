@@ -1,448 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ugo Monnier - Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    <link href="./css/style-experiences.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Mon Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/experiences/index.html">Expériences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/projets/index.html">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ugo Monnier - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <link href="./css/style-experiences.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Mon Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/experiences/index.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projets/index.html">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5" id="experiences">
+    <h3 class="text-center mb-4">Mes Expériences Professionnelles</h3>
+    <p class="text-center mb-5">
+      Voici un aperçu de mes compétences et expériences en développement web.
+    </p>
+
+    <div class="row">
+      <!-- Carte 1: Master en Informatique -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center">
+        <div style="max-width: 300px"
+          class="card h-100 text-center">
+          <img src="../asset/logo-emse.jpg" class="card-img-top" alt="Master Computer Science"
+            style="max-width: 300px" />
+          <div class="card-body d-flex flex-column justify-content-around align-items-center" style="max-width: 300px">
+            <h5 class="card-title">Master en Informatique</h5>
+            <p class="card-text">
+              J’ai obtenu un Master en Informatique à l’École des Mines de
+              Saint-Étienne, spécialisé en hyperfréquences. Technologies : C,
+              C++, Java, Python, MySQL, Symfony.
+            </p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              En savoir plus
+            </button>
+            <!-- Modal -->
+            <div class="modal fade custom-blur-modal" id="exampleModal1" tabindex="-1"
+              aria-labelledby="exampleModalLabel1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">
+                      Master en Informatique
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../asset/modal-emse.png" class="p-2" alt="Master Computer Science"
+                      style="max-width: 100px" />
+                    <div class="row">
+                      <p>
+                        L'<strong>École des Mines de Saint-Étienne</strong> forme des
+                        ingénieurs innovants et adaptables pour répondre aux
+                        défis modernes. Le diplôme ISMIN, spécialisé en
+                        informatique, offre une formation de pointe sur un
+                        campus high-tech en Provence, en lien avec un
+                        environnement industriel dynamique. Le programme allie
+                        <strong>Prestige, Innovation</strong> et
+                        <strong>Rigueur</strong> pour un parcours réussi.
+                      </p>
+                      <p>
+                        Le cursus ISMIN forme des ingénieurs polyvalents en
+                        microélectronique et informatique avec un fort accent
+                        sur l'innovation. Les étudiants travaillent sur des
+                        projets concrets en
+                        <strong>Java, Python, C++, UML, C </strong>et
+                        <strong>bases de données</strong>, développant des
+                        compétences en programmation et en modélisation
+                        physique alliant
+                        <strong>science de l'ingénieur</strong> et
+                        <strong>informatique</strong> . Le programme intègre
+                        aussi des modules en
+                        <strong>marketing digital</strong> et en
+                        <strong>management des systèmes d'information </strong>pour une vision globale de l'entreprise.
+                        Les
+                        communications entre API sont abordées pour maîtriser
+                        l'interopérabilité des systèmes, et les projets
+                        favorisent l'autonomie, la créativité et la
+                        collaboration en équipe.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Fermer
+                    </button>
+                    <a href="https://www.mines-stetienne.fr/formation/ismin/" class="btn btn-dark" role="button"
+                      target="_blank">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
 
-    <div class="container my-5" id="experiences">
-      <h3 class="text-center mb-4">Mes Expériences Professionnelles</h3>
-      <p class="text-center mb-5">
-        Voici un aperçu de mes compétences et expériences en développement web.
-      </p>
-
-      <div class="row">
-        <!-- Carte 1: Master en Informatique -->
-        <div
-          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
-        >
-          <div
-            style="max-width: 300px"
-            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              src="../asset/logo-emse.jpg"
-              class="card-img-top"
-              alt="Master Computer Science"
-              style="max-width: 300px"
-            />
-            <div
-              class="card-body d-flex flex-column justify-content-center align-items-center"
-              style="max-width: 300px"
-            >
-              <h5 class="card-title">Master en Informatique</h5>
-              <p class="card-text">
-                J’ai obtenu un Master en Informatique à l’École des Mines de
-                Saint-Étienne, spécialisé en hyperfréquences. Technologies : C,
-                C++, Java, Python, MySQL, Symfony.
-              </p>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal1"
-              >
-                En savoir plus
-              </button>
-              <!-- Modal -->
-              <div
-                class="modal fade custom-blur-modal"
-                id="exampleModal1"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel1"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel1">
-                        Master en Informatique
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+      <!-- Carte 2: Développeur Fullstack SEO -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center">
+        <div style="max-width: 300px"
+          class="card h-100 text-center">
+          <img src="../asset/cropped-Logo_Velcome.jpeg" class="card-img-top" alt="Développeur Fullstack SEO"
+            style="max-width: 300px" />
+          <div class="card-body d-flex flex-column justify-content-around align-items-center" style="max-width: 300px">
+            <h5 class="card-title">Développeur Fullstack SEO chez Velcome</h5>
+            <p class="card-text">
+              Développement de sites vitrines et e-commerce avec des CMS tels que WordPress et Prestashop, ou utilisant
+              Next JS + une consommation de CMS Headless et conseils SEO. L'agence Velcome SEO est spécialisée dans le
+              référencement naturel, l'optimisation web via diverses
+              technologies telles que Next JS ou react JS et l'expérience
+              utilisateur (UX).
+            </p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              En savoir plus
+            </button>
+            <!-- Modal -->
+            <div class="modal fade custom-blur-modal" id="exampleModal2" tabindex="-1"
+              aria-labelledby="exampleModalLabel2" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2">
+                      Web developpeur Fullstack / Consultant SEO Technique
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../asset/cropped-Logo_Velcome.jpeg" class="p-2" alt="Master Computer Science"
+                      style="max-width: 300px" />
+                    <div class="row">
+                      <p>
+                        L'agence Velcome SEO est spécialisée dans le
+                        référencement naturel (SEO), le référencement payant
+                        (SEA), l'optimisation web et l'expérience utilisateur
+                        (UX). Elle propose des services complets pour
+                        améliorer la visibilité et la notoriété des sites
+                        internet de ses clients, en se concentrant sur trois
+                        aspects principaux : l'optimisation technique du site,
+                        la rédaction de contenu optimisé et l'acquisition de
+                        notoriété via des backlinks. J'ai participer à ces
+                        optimisation en tant que <strong>  developpeur fullstack </strong> et <strong> 
+                        consultant SEO </strong> via la réalisation d' audits SEO,
+                        techniques pour analyser le marché et optimiser les
+                        performances du site web.
+                      </p>
+                      <p>
+                        Services principaux :  <strong> Audit SEO </strong>: Analyse du site pour
+                        détecter les axes d'amélioration. Développement web
+                        pour des sites vitrines ou des sites e-commerce,
+                        communication entre API. Vulgarisation technique
+                        auprès des clients, maintenance technique. Les
+                        technologies utilisées sont Wordpress via Gutenberg
+                        (React js et JS) pour développer autant le back office
+                        - réservé au client de Velcome SEO - que la partie vue
+                        par l'utilisateur. Mais également des sites réaliser
+                        en <strong> Next JS </strong> (Framework de  <strong> React JS</strong>) idéal pour de
+                        bonnes performance SEO.
+                      </p>
                     </div>
-                    <div class="modal-body">
-                      <img
-                        src="../asset/modal-emse.png"
-                        class="p-2"
-                        alt="Master Computer Science"
-                        style="max-width: 100px"
-                      />
-                      <div class="row">
-                        <p>
-                          L'École des Mines de Saint-Étienne forme des
-                          ingénieurs innovants et adaptables pour répondre aux
-                          défis modernes. Le diplôme ISMIN, spécialisé en
-                          informatique, offre une formation de pointe sur un
-                          campus high-tech en Provence, en lien avec un
-                          environnement industriel dynamique. Le programme allie
-                          <strong>Prestige, Innovation</strong> et
-                          <strong>Rigueur</strong> pour un parcours réussi.
-                        </p>
-                        <p>
-                          Le cursus ISMIN forme des ingénieurs polyvalents en
-                          microélectronique et informatique avec un fort accent
-                          sur l'innovation. Les étudiants travaillent sur des
-                          projets concrets en
-                          <strong>Java, Python, C++, UML, C </strong>et
-                          <strong>bases de données</strong>, développant des
-                          compétences en programmation et en modélisation
-                          physique alliant
-                          <strong>science de l'ingénieur</strong> et
-                          <strong>informatique</strong> . Le programme intègre
-                          aussi des modules en
-                          <strong>marketing digital</strong> et en
-                          <strong>management des systèmes d'information </strong
-                          >pour une vision globale de l'entreprise. Les
-                          communications entre API sont abordées pour maîtriser
-                          l'interopérabilité des systèmes, et les projets
-                          favorisent l'autonomie, la créativité et la
-                          collaboration en équipe.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Fermer
-                      </button>
-                      <a
-                        href="https://www.mines-stetienne.fr/formation/ismin/"
-                        class="btn btn-dark"
-                        role="button"
-                        target="_blank"
-                      >
-                        En savoir plus
-                      </a>
-                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Fermer
+                    </button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                      En savoir plus
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Carte 2: Développeur Fullstack SEO -->
-        <div
-          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
-        >
-          <div
-            style="max-width: 300px"
-            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              src="../asset/cropped-Logo_Velcome.jpeg"
-              class="card-img-top"
-              alt="Développeur Fullstack SEO"
-              style="max-width: 300px"
-            />
-            <div class="card-body" style="max-width: 300px">
-              <h5 class="card-title">Développeur Fullstack SEO chez Velcome</h5>
-              <p class="card-text">
-                Développement de sites WordPress avec React, e-commerce et
-                optimisation SEO. L'agence Velcome SEO est spécialisée dans le
-                référencement naturel (SEO), l'optimisation web via diverses
-                technologies telles que Next JS ou react JS et l'expérience
-                utilisateur (UX).
-              </p>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal2"
-              >
-                En savoir plus
-              </button>
-              <!-- Modal -->
-              <div
-                class="modal fade custom-blur-modal"
-                id="exampleModal2"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel2"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel2">
-                        Master en Informatique
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center">
+        <div style="max-width: 300px"
+          class="card h-100 text-center">
+          <img src="../asset/logo_conex_sante.jpg" class="card-img-top" alt="Développeur Fullstack Java Symphony React JS"
+            style="max-width: 300px" />
+          <div class="card-body d-flex flex-column justify-content-around align-items-center" style="max-width: 300px">
+            <h5 class="card-title">Développeur Fullstack Java / Symphony et React JS</h5>
+            <p class="card-text">
+              Participation au développement d’une API REST avec React et
+              Symfony pour une plateforme médicale.
+            </p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalConexSante">
+              En savoir plus
+            </button>
+            <!-- Modal -->
+            <div class="modal fade custom-blur-modal" id="modalConexSante" tabindex="-1"
+              aria-labelledby="modalConexSanteLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalConexSanteLabel">
+                      
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../asset/logo_conex_sante.jpg" class="p-2" alt="Master Computer Science"
+                      style="max-width: 300px" />
+                    <div class="row">
+                      <p>
+                      <strong>Plateforme Saas multi-usage de télémédecine </strong> adaptée aux paramedicaux, aux structures de santé et aux
+                        professionels de santé.
+                        Conex santé facilite la prise en charge des patients et renforce la collaboration étroite entre
+                        les professionnels de santé au sein de réseaux spécialisés et pluridisciplinaires.
+                      </p>
+                      <p>
+                        J'ai intégré une équipe <strong>Scrum</strong> composée d'un <strong>Product Owner</strong>, d'un <strong>Scrum Master</strong> et de 8
+                        développeurs constituée de deux développeurs mobiles IOS et Android ainsi que de 6 développeurs fullstack <strong>Symphony/
+                        React JS</strong>.
+                        Concernant les produits de Conex Santé, nous travaillions principalement sur la plateforme Conex
+                        Santé développé en <strong>Symphony </strong>et <strong>React JS</strong>. Dans une moindre mesure, nous travaillions sur des
+                        tâches sur le produit d'une sonde de dentiste développer en <strong>Java</strong>.
+                      </p>
                     </div>
-                    <div class="modal-body">
-                      <img
-                        src="../asset/cropped-Logo_Velcome.jpeg"
-                        class="p-2"
-                        alt="Master Computer Science"
-                        style="max-width: 300px"
-                      />
-                      <div class="row">
-                        <p>
-                          L'agence VelcomeSEO est spécialisée dans le
-                          référencement naturel (SEO), le référencement payant
-                          (SEA), l'optimisation web et l'expérience utilisateur
-                          (UX). Elle propose des services complets pour
-                          améliorer la visibilité et la notoriété des sites
-                          internet de ses clients, en se concentrant sur trois
-                          aspects principaux : l'optimisation technique du site,
-                          la rédaction de contenu optimisé et l'acquisition de
-                          notoriété via des backlinks. J'ai participer à ces
-                          optimisation en tant que developpeur fullstack et
-                          consultant SEO via la réalisation d' audits SEO,
-                          techniques pour analyser le marché et optimiser les
-                          performances du site web.
-                        </p>
-                        <p>
-                          Services principaux : Audit SEO : Analyse du site pour
-                          détecter les axes d'amélioration. Développement web
-                          pour des sites vitrines ou des sites e-commerce,
-                          communication entre API. Vulgarisation technique
-                          auprès des clients, maintenance technique. Les
-                          technologies utilisées sont Wordpress via Gutenberg
-                          (React js et JS) pour développer autant le back office
-                          - réservé au client de Velcome SEO - que la partie vue
-                          par l'utilisateur. Mais également des sites réaliser
-                          en Next JS (Framework de React JS) idéale pour de
-                          bonnes performance SEO.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Fermer
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-dark"
-                        data-bs-dismiss="modal"
-                      >
-                        En savoir plus
-                      </button>
-                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Fermer
+                    </button>
+                    <a href="https://www.conexsante.com/" class="btn btn-dark" role="button"
+                      target="_blank">
+                      En savoir plus
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Carte 3: Développeur Fullstack chez Conex Santé -->
-        <div
-          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
-        >
-          <div
-            style="max-width: 300px"
-            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              src="../asset/logo_conex_sante.jpg"
-              class="card-img-top"
-              alt="Développeur Fullstack chez Conex Santé"
-              style="max-width: 300px"
-            />
-            <div class="card-body" style="max-width: 300px">
-              <h5 class="card-title">Développeur Fullstack chez Conex Santé</h5>
-              <p class="card-text">
-                Participation au développement d’une API REST avec React et
-                Symfony pour une plateforme médicale.
-              </p>
-              <a href="experiences/thales/index.html" class="btn btn-dark"
-                >Voir plus</a
-              >
-            </div>
+
+
+      <!-- Carte 4: Ingénieur Avant Vente chez Scallog -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center">
+        <div style="max-width: 300px"
+          class="card h-100 text-center d-flex flex-column justify-content-center align-items-center">
+          <img src="../asset/Scallog.png" class="card-img-top" alt="Ingénieur Avant Vente chez Scallog"
+            style="max-width: 300px" />
+          <div class="card-body" style="max-width: 300px">
+            <h5 class="card-title">Ingénieur Avant Vente chez Scallog</h5>
+            <p class="card-text">
+              Analyse des besoins clients et rédaction de propositions
+              commerciales pour des solutions technologiques.
+            </p>
+            <a href="experiences/thales/index.html" class="btn btn-dark">Voir plus</a>
           </div>
         </div>
+      </div>
 
-        <!-- Carte 4: Ingénieur Avant Vente chez Scallog -->
-        <div
-          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
-        >
-          <div
-            style="max-width: 300px"
-            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              src="../asset/Scallog.png"
-              class="card-img-top"
-              alt="Ingénieur Avant Vente chez Scallog"
-              style="max-width: 300px"
-            />
-            <div class="card-body" style="max-width: 300px">
-              <h5 class="card-title">Ingénieur Avant Vente chez Scallog</h5>
-              <p class="card-text">
-                Analyse des besoins clients et rédaction de propositions
-                commerciales pour des solutions technologiques.
-              </p>
-              <a href="experiences/thales/index.html" class="btn btn-dark"
-                >Voir plus</a
-              >
-            </div>
+      <!-- Carte 5: Ingénieur Avant Vente chez Nokia -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center">
+        <div style="max-width: 300px"
+          class="card h-100 text-center d-flex flex-column justify-content-center align-items-center">
+          <img src="../asset/nokia.jpg" class="card-img-top" alt="Ingénieur Avant Vente chez Nokia"
+            style="max-width: 300px" />
+          <div class="card-body" style="max-width: 300px">
+            <h5 class="card-title">Ingénieur Avant Vente chez Nokia</h5>
+            <p class="card-text">
+              Gestion du pipeline Salesforce et élaboration de prévisions
+              financières pour le département.
+            </p>
+            <a href="experiences/thales/index.html" class="btn btn-dark">Voir plus</a>
           </div>
         </div>
+      </div>
 
-        <!-- Carte 5: Ingénieur Avant Vente chez Nokia -->
-        <div
-          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
-        >
-          <div
-            style="max-width: 300px"
-            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              src="../asset/nokia.jpg"
-              class="card-img-top"
-              alt="Ingénieur Avant Vente chez Nokia"
-              style="max-width: 300px"
-            />
-            <div class="card-body" style="max-width: 300px">
-              <h5 class="card-title">Ingénieur Avant Vente chez Nokia</h5>
-              <p class="card-text">
-                Gestion du pipeline Salesforce et élaboration de prévisions
-                financières pour le département.
-              </p>
-              <a href="experiences/thales/index.html" class="btn btn-dark"
-                >Voir plus</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Carte 6: Ingénieur Fullstack chez Thales -->
-        <div
-          class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center"
-        >
-          <div
-            style="max-width: 300px"
-            class="card h-100 text-center d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              src="../asset/logo-Thales-cropped.jpg"
-              class="card-img-top"
-              alt="Ingénieur Fullstack chez Thales"
-              style="max-width: 300px"
-            />
-            <div class="card-body" style="max-width: 300px">
-              <h5 class="card-title">Ingénieur Fullstack chez Thales</h5>
-              <p class="card-text">
-                Automatisation des tests des cartes haute fréquence avec Python
-                et JavaScript, travail en méthodologie Kanban.
-              </p>
-              <a href="experiences/thales/index.html" class="btn btn-dark"
-                >Voir plus</a
-              >
-            </div>
+      <!-- Carte 6: Ingénieur Fullstack chez Thales -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center align-items-center">
+        <div style="max-width: 300px"
+          class="card h-100 text-center d-flex flex-column justify-content-center align-items-center">
+          <img src="../asset/logo-Thales-cropped.jpg" class="card-img-top" alt="Ingénieur Fullstack chez Thales"
+            style="max-width: 300px" />
+          <div class="card-body" style="max-width: 300px">
+            <h5 class="card-title">Ingénieur Fullstack chez Thales</h5>
+            <p class="card-text">
+              Automatisation des tests des cartes haute fréquence avec Python
+              et JavaScript, travail en méthodologie Kanban.
+            </p>
+            <a href="experiences/thales/index.html" class="btn btn-dark">Voir plus</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Contact</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nom</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Votre nom"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Votre email"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="3"
-                  placeholder="Votre message"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-dark">Envoyer</button>
-            </form>
-          </div>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name" placeholder="Votre nom" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Votre email" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Envoyer</button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

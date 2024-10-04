@@ -15,8 +15,11 @@
     height: 100vh;
     backdrop-filter: blur(6px); /* Adjust the blur amount */
     z-index: -1; /* Ensures the backdrop is behind the modal */
-    background-color: rgba(255, 255, 255, 0.136); /* Adds a semi-transparent overlay */
+    background-color: rgba(255, 255, 255, 0.273) !important; /* Adds a semi-transparent overlay */
   }
   
+  .custom-blur-modal{
+    background-color: transparent;
+  }
 
   
