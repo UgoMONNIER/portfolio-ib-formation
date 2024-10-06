@@ -54,6 +54,7 @@
 }
 
 .nav-link:not(.active):hover {
+    cursor: pointer;
     color:  #a790f7;
     text-decoration: none;
 }
