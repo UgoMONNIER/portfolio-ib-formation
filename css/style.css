@@ -32,3 +32,8 @@
     transform: translateX(0); /* Le texte se déplace doucement dans sa position initiale */
   }
   
+  .nav-link:not(.active):hover {
+    cursor: pointer;
+    color: #a790f7;
+    text-decoration: none;
+  }
