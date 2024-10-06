@@ -1,0 +1,51 @@
+.vignette-image {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+  }
+
+
+  /* Custom blur for the modal backdrop */
+.custom-blur-modal::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(6px); /* Adjust the blur amount */
+    z-index: -1; /* Ensures the backdrop is behind the modal */
+    background-color: rgba(255, 255, 255, 0.273) !important; /* Adds a semi-transparent overlay */
+  }
+  
+  .custom-blur-modal{
+    background-color: transparent;
+  }
+
+  .navbar-brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand > span {
+    opacity: 0; /* Le texte est caché par défaut */
+    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+    position: absolute;
+    left: 90px; /* Positionne le texte à droite de l'image */
+    transform: translateX(-20px); /* Décale légèrement le texte vers la gauche */
+  }
+  
+  .navbar-brand img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-brand:hover img {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+  }
+  
+  .navbar-brand:hover > span {
+    opacity: 1; /* Fait apparaître le texte au survol de l'image */
+    transform: translateX(0); /* Le texte se déplace doucement dans sa position initiale */
+  }
+  
