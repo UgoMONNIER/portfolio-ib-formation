@@ -60,6 +60,11 @@
   text-decoration: none;
 }
 
+.card{
+  box-shadow: 2px 4px 12px #00000014;
+  border: transparent;
+}
+
 
 .sticky-nav {
   position: fixed; 
@@ -67,7 +72,7 @@
   z-index: 1020; 
   color: black;
   width: 100%; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 2px 4px 12px #00000014;
   background-color: rgba(255, 255, 255, 0.418) !important; 
   backdrop-filter: blur(10px); 
   background: linear-gradient(135deg,  rgba(31, 214, 214, 0.5), rgba(167, 144, 247, 0.5)); 
