@@ -1,39 +1,47 @@
-.spacer {
-    background-color: #000000;
-    opacity: 0.8;
-    background-image: linear-gradient(to right, #d6d6d6, #d6d6d6 6px, #000000 6px, #000000);
-    background-size: 12px 100%;
-}
+
 
 .navbar-brand {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-brand > span {
-    opacity: 0; /* Le texte est caché par défaut */
-    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
-    position: absolute;
-    left: 90px; /* Positionne le texte à droite de l'image */
-    transform: translateX(-20px); /* Décale légèrement le texte vers la gauche */
-  }
-  
-  .navbar-brand img {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .navbar-brand:hover img {
-    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
-  }
-  
-  .navbar-brand:hover > span {
-    opacity: 1; /* Fait apparaître le texte au survol de l'image */
-    transform: translateX(0); /* Le texte se déplace doucement dans sa position initiale */
-  }
-  
-  .nav-link:not(.active):hover {
-    cursor: pointer;
-    color: #a790f7;
-    text-decoration: none;
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand > span {
+  opacity: 0; /* Le texte est caché par défaut */
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+  position: absolute;
+  left: 90px;
+  transform: translateX(-20px);
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1);
+}
+
+.navbar-brand:hover > span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nav-link:not(.active):hover {
+  cursor: pointer;
+  color: #178a8a !important;
+  text-decoration: none;
+}
+
+.sticky-nav {
+  position: fixed; 
+  top: 0;
+  z-index: 1020; 
+  color: black;
+  width: 100%; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  background-color: rgba(255, 255, 255, 0.418) !important; 
+  backdrop-filter: blur(10px); 
+  background: linear-gradient(135deg, rgba(167, 144, 247, 0.5), rgba(31, 214, 214, 0.5)); 
+  transition: background 0.3s ease;
+}

@@ -4,7 +4,6 @@
   object-fit: cover;
 }
 
-/* Custom blur for the modal backdrop */
 .custom-blur-modal::before {
   content: "";
   position: fixed;
@@ -12,14 +11,14 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(6px); /* Adjust the blur amount */
-  z-index: -1; /* Ensures the backdrop is behind the modal */
+  backdrop-filter: blur(6px); 
+  z-index: -1; 
   background-color: rgba(
     255,
     255,
     255,
     0.273
-  ) !important; /* Adds a semi-transparent overlay */
+  ) !important; 
 }
 
 .custom-blur-modal {
@@ -55,7 +54,19 @@
 
 .nav-link:not(.active):hover {
     cursor: pointer;
-    color:  #a790f7;
+    color:  #a790f7 !important;
     text-decoration: none;
 }
 
+.sticky-nav {
+  position: fixed; 
+  top: 0;
+  z-index: 1020; 
+  color: black;
+  width: 100%; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  background-color: rgba(255, 255, 255, 0.418) !important; 
+  backdrop-filter: blur(10px); 
+  background: linear-gradient(135deg, rgba(167, 144, 247, 0.5), rgba(31, 214, 214, 0.5)); 
+  transition: background 0.3s ease;
+}
