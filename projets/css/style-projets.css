@@ -75,3 +75,9 @@
   box-shadow: 2px 4px 12px #00000014;
   border: transparent;
 }
+
+
+.carousel-img {
+  max-height: 600px;
+  object-fit: cover;
+}

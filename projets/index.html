@@ -18,12 +18,12 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="./../index.html">
           <span>
-            <span style="color:#030304">Ugo</span>
-            <span style="color: #1A9A9B">MONNIER</span>
+            <span style="color: #030304">Ugo</span>
+            <span style="color: #1a9a9b">MONNIER</span>
           </span>
           <img
-          src="../asset/logo.png"
-          class="m-3"
+            src="../asset/logo.png"
+            class="m-3"
             alt="..."
             width="60"
             height="60"
@@ -43,13 +43,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link text-black" aria-current="page"  href="./../index.html">Accueil</a>
+              <a
+                class="nav-link text-black"
+                aria-current="page"
+                href="./../index.html"
+                >Accueil</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="./../experiences/index.html">Expériences</a>
+              <a class="nav-link text-black" href="./../experiences/index.html"
+                >Expériences</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" style="color:#5454cd"  href="">Projets</a>
+              <a class="nav-link active" style="color: #5454cd" href=""
+                >Projets</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-black" href="#contact">Contact</a>
@@ -60,7 +69,7 @@
     </nav>
 
     <div class="container mt-5 pt-5" id="projets">
-      <h2 style="color :transparent; height: 50px"></h2>
+      <h2 style="color: transparent; height: 50px"></h2>
       <h3 class="text-center mb-4">Mes Projets</h3>
       <p class="text-center mb-5">
         Voici un aperçu de mes projets en développement web et en intelligence
@@ -177,24 +186,24 @@
         >
           <div style="max-width: 400px" class="card h-100 text-center">
             <div class="row d-flex justify-content-center align-items-center">
-                <img
+              <img
                 src="../asset/alpha-wann-verso.avif"
                 class="card-img-top"
                 alt="Projet web design"
                 style="max-width: 130px"
-                />
-                <img
+              />
+              <img
                 src="../asset/luminiita2.avif"
                 class="card-img-top"
                 alt="Projet web design"
                 style="max-width: 130px"
-                />
-                <img
+              />
+              <img
                 src="../asset/white-st-barth.png"
                 class="card-img-top"
                 alt="Projet web design"
                 style="max-width: 150px"
-                />
+              />
             </div>
             <div
               class="card-body d-flex flex-column justify-content-around align-items-center"
@@ -216,7 +225,7 @@
               </button>
               <!-- Modal -->
               <div
-                class="modal fade custom-blur-modal"
+                class="modal custom-blur-modal"
                 id="modalWebDesign"
                 tabindex="-1"
                 aria-labelledby="modalWebDesignLabel"
@@ -226,7 +235,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h1 class="modal-title fs-5" id="modalWebDesignLabel">
-                        Projet Web Design
+                        Projet Web Design et Peinture
                       </h1>
                       <button
                         type="button"
@@ -236,18 +245,91 @@
                       ></button>
                     </div>
                     <div class="modal-body">
-                      <img
-                        src="../asset/web-design.jpg"
-                        class="p-2"
-                        alt="Projet Web Design"
-                        style="max-width: 400px"
-                      />
-                      <div class="row">
-                        <p>
-                          Des projets récents illustrant des designs créatifs et
-                          fonctionnels, adaptés aux besoins des utilisateurs.
-                        </p>
+                      <!-- Bootstrap Carousel -->
+                      <div
+                        id="carouselWebDesignPeinture"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                      >
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#carouselWebDesignPeinture"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselWebDesignPeinture"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselWebDesignPeinture"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                          ></button>
+                        </div>
+                        <h1 class="modal-title fs-5" id="modalWebDesignLabel">
+                          Projet Web Design
+                        </h1>
+
+                        <!-- Carousel Images -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="../asset/luminitas.jpg"
+                              class="d-block mx-auto carousel-img"
+                              alt="Projet Web Design"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="../asset/alpha-wann.jpg"
+                              class="d-block mx-auto carousel-img"
+                              alt="Projet Peinture 1"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="../asset/Vinyl-NujabesMockUp-VERSO.png"
+                              class="d-block mx-auto carousel-img"
+                              alt="Projet Peinture 2"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Carousel Controls (previous/next) -->
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselWebDesignPeinture"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselWebDesignPeinture"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                       </div>
+                      <!-- End of Carousel -->
                     </div>
                     <div class="modal-footer">
                       <button
@@ -463,8 +545,10 @@
             >
               <h5 class="card-title">Projet Clone Trello</h5>
               <p class="card-text">
-                Trello est une plateforme de gestion de projet avec des tâches et des sous-tâches à gerer sur un dashboard virtuel.
-                Il s'aggissait de faire ce projet en Node js en back et en React Js en front-end
+                Trello est une plateforme de gestion de projet avec des tâches
+                et des sous-tâches à gerer sur un dashboard virtuel. Il
+                s'aggissait de faire ce projet en Node js en back et en React Js
+                en front-end
               </p>
               <button
                 type="button"
