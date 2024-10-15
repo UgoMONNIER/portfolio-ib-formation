@@ -78,3 +78,8 @@
   background: linear-gradient(135deg,  rgba(31, 214, 214, 0.5), rgba(167, 144, 247, 0.5)); 
   transition: background 0.3s ease;
 }
+
+.highlight {
+  color: #1a9a9b;
+  font-weight: bold;
+}
