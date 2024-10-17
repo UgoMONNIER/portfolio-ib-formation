@@ -83,3 +83,8 @@
   color: #1a9a9b;
   font-weight: bold;
 }
+
+.animate-on-scroll {
+  opacity: 0; 
+  transform: translateY(50px); 
+}
