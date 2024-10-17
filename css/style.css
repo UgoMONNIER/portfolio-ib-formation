@@ -10,7 +10,7 @@
 }
 
 .navbar-brand > span {
-  opacity: 0; /* Le texte est caché par défaut */
+  opacity: 0; 
   transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
   position: absolute;
   left: 90px;
@@ -138,4 +138,9 @@ p {
 .navbar-toggler:focus {
   box-shadow: none;
   
+}
+
+.animate-on-scroll {
+  opacity: 0; 
+  transform: translateY(30px); 
 }
