@@ -117,6 +117,25 @@ p {
 @media (max-width: 992px) {
   .dropdown-menu{
     display: block; 
-
+    background: transparent;
+    border: transparent;
   }
+}
+
+.navbar-toggler-icon {
+  background-image: url('./../asset/menu-burger-black.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+.navbar-toggler-icon:hover {
+  background-image:  url('./../asset/close.svg');
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  
 }
