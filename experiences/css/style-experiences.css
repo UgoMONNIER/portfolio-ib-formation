@@ -33,11 +33,11 @@
 }
 
 .navbar-brand > span {
-  opacity: 0; /* Le texte est caché par défaut */
+  opacity: 0; 
   transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
   position: absolute;
-  left: 90px; /* Positionne le texte à droite de l'image */
-  transform: translateX(-20px); /* Décale légèrement le texte vers la gauche */
+  left: 90px; 
+  transform: translateX(-20px); 
 }
 
 .navbar-brand img {
@@ -45,14 +45,14 @@
 }
 
 .navbar-brand:hover img {
-  transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+  transform: scale(1.1); 
 }
 
 .navbar-brand:hover > span {
-  opacity: 1; /* Fait apparaître le texte au survol de l'image */
+  opacity: 1; 
   transform: translateX(
     0
-  ); /* Le texte se déplace doucement dans sa position initiale */
+  ); 
 }
 .nav-link:not(.active):hover {
   cursor: pointer;
@@ -84,7 +84,45 @@
   font-weight: bold;
 }
 
+.dropdown-menu {
+  display: none; 
+}
+
+.dropdown-menu.show {
+  display: block; 
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; 
+}
+
+@media (max-width: 992px) {
+  .dropdown-menu{
+    display: block; 
+    background: transparent;
+    border: transparent;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url('./../asset/menu-burger-black.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+.navbar-toggler-icon:hover {
+  background-image:  url('./../asset/close.svg');
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  
+}
+
 .animate-on-scroll {
   opacity: 0; 
-  transform: translateY(50px); 
+  transform: translateY(30px); 
 }

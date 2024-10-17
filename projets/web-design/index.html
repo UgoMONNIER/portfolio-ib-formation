@@ -12,65 +12,120 @@
     <link href="./../css/style-projets.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-nav navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./../../index.html">
-          <span>
-            <span style="color: #030304">Ugo</span>
-            <span style="color: #1a9a9b">MONNIER</span>
-          </span>
-          <img
-            src="../../asset/logo.png"
-            class="m-3"
-            alt="..."
-            width="60"
-            height="60"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                aria-current="page"
-                href="./../../index.html"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="./../../experiences/index.html"
-                >Expériences</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="./../index.html"
-                style="color: #5454cd"
-                >Projets</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg sticky-nav navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./../index.html">
+            <span>
+              <span style="color: #030304">Ugo</span>
+              <span style="color: #1a9a9b">MONNIER</span>
+            </span>
+            <img
+              src="./../../asset/logo.png"
+              class="m-3"
+              alt="..."
+              width="60"
+              height="60"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  style="color: #5454cd"
+                  aria-current="page"
+                  href="./index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-black"
+                  href="./../../experiences/index.html"
+                  >Expériences</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="experiencesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../../experiences/velcome-seo/index.html"
+                      >Velcome Seo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../../experiences/conex-sante/index.html"
+                      >Conex Santé</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../../experiences/scallog/index.html"
+                      >Scallog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../../experiences/nokia/index.html"
+                      >Nokia</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../experiences/thales/index.html"
+                      >Thales</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-black"
+                  href="./../index.html"
+                  id="projetsDropdown"
+                  role="button"
+                  aria-expanded="false"
+                  >Projets</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
+                  <li>
+                    <a class="dropdown-item" href=""
+                      >Web Design</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./../peintures-genAI/index.html"
+                      >Peintures GenAI</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- SERVICES SECTION -->
     <section class="my-5">
