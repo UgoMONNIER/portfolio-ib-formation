@@ -123,7 +123,7 @@ p {
 }
 
 .navbar-toggler-icon {
-  background-image: url('./../asset/menu-burger-black.svg');
+  background-image: url('./../../asset/menu-burger-black.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 1.5em;
@@ -132,7 +132,7 @@ p {
 
 
 .navbar-toggler-icon:hover {
-  background-image:  url('./../asset/close.svg');
+  background-image:  url('./../../asset/close.svg');
 }
 
 .navbar-toggler:focus {
