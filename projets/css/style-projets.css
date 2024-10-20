@@ -148,10 +148,10 @@ p {
 .carousel-img {
   max-width: 100%;
   height: auto;
-  object-fit: cover; /* Adaptation pour garder le ratio d'origine */
+  object-fit: cover; 
 }
 
 .card-img-top {
   width: 100%;
-  height: auto; /* Maintenir le ratio des images */
+  height: auto; 
 }
