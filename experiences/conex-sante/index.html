@@ -12,69 +12,126 @@
     <link href="./../css/style-experiences.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-nav navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./../../index.html">
-          <span>
-            <span style="color: #030304">Ugo</span>
-            <span style="color: #1a9a9b">MONNIER</span>
-          </span>
-          <img
-            src="../../asset/logo.png"
-            class="m-3"
-            alt="Logo"
-            width="60"
-            height="60"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                aria-current="page"
-                href="./../../index.html"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="./../../experiences/index.html"
-                >Expériences</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="./../index.html"
-                style="color: #5454cd"
-                >Projets</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-expand-lg sticky-nav navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./../../index.html">
+            <span>
+              <span style="color: #030304">Ugo</span>
+              <span style="color: #1a9a9b">MONNIER</span>
+            </span>
+            <img
+              src="./../../asset/logo.png"
+              class="m-3"
+              alt="..."
+              width="60"
+              height="60"
+            />
+          </a>
 
-    <!-- SERVICES SECTION -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  style="color: #5454cd"
+                  aria-current="page"
+                  href="./index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-black"
+                  href="./../index.html"
+                  >Expériences</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="experiencesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../velcome-seo/index.html"
+                      >Velcome Seo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../conex-sante/index.html"
+                      >Conex Santé</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../scallog/index.html"
+                      >Scallog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../nokia/index.html"
+                      >Nokia</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../thales/index.html"
+                      >Thales</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-black"
+                  href="./../../projets/index.html"
+                  id="projetsDropdown"
+                  role="button"
+                  aria-expanded="false"
+                  >Projets</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../../projets/web-design/index.html"
+                      >Web Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../../projets/peintures-genAI/index.html"
+                      >Peintures GenAI</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <section class="my-5">
-      <h2 style="color: transparent; height: 70px"></h2>
+      <h2 style="color: transparent; height: 90px"></h2>
 
       <div class="container">
         <h2 class="text-center mb-4 animate-on-scroll">
@@ -82,9 +139,9 @@
         </h2>
         <div class="d-flex justify-content-around align-items-center">
           <img
-            src="./../../asset/api-rest.png"
+            src="./../../asset/rest-api.avif"
             alt="API REST"
-            class="mb-3"
+            class="my-4 me-5 ms-0 rounded animate-on-scroll"
             style="max-width: 700px"
           />
           <div
@@ -104,7 +161,6 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
     <section class="my-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-4 animate-on-scroll">
@@ -113,32 +169,31 @@
         <div class="row">
           <div class="col-md-6">
             <div class="testimonial-card animate-on-scroll">
+              <h5>Coordination Agile</h5>
               <p>
-                "L’équipe était composée de 8 développeurs, dont deux
+                L’équipe était composée de 8 développeurs, dont deux
                 développeurs mobiles. Nous avons fonctionné en sprints de deux
                 semaines avec une répartition équitable des tâches via un
                 planning de sprint. Chaque tâche était estimée en termes de
-                charge et attribuée à un développeur."
+                charge et attribuée à un développeur.
               </p>
-              <h5>Coordination Agile</h5>
             </div>
           </div>
           <div class="col-md-6">
             <div class="testimonial-card animate-on-scroll">
+              <h5>Développement Fullstack</h5>
               <p>
-                "J’ai développé la partie front-end avec React, en utilisant
+                J’ai développé la partie front-end avec React, en utilisant
                 TypeScript, Redux, React-Select, Material UI, Styled Components
                 et Axios. Pour la partie back-end, j'ai utilisé Symfony avec
-                Doctrine comme ORM, et MySQL pour la gestion des données."
+                Doctrine comme ORM, et MySQL pour la gestion des données.
               </p>
-              <h5>Développement Fullstack</h5>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECT SECTION -->
     <section class="my-5">
       <div class="container">
         <h2 class="text-center mb-4 animate-on-scroll">
@@ -181,7 +236,6 @@
       </div>
     </section>
 
-    <!-- CALL TO ACTION SECTION -->
     <section class="my-5">
       <div class="container text-center">
         <h2>Découvrez mes autres projets</h2>
