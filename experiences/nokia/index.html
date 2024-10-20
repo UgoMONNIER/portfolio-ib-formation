@@ -11,14 +11,8 @@
     />
     <link href="./../css/style-experiences.css" rel="stylesheet" />
     <style>
-      .animate-on-scroll {
-        opacity: 0;
-        transform: translateY(50px);
-      }
-      .highlight {
-        color: #1a9a9b;
-        font-weight: bold;
-      }
+
+
       .experience-section {
         background-color: #f8f9fa;
         padding: 60px 0;
@@ -30,23 +24,23 @@
     </style>
   </head>
   <body>
-    <!-- Navbar -->
-    <header class="text-black text-center py-4">
+    <header>
       <nav class="navbar navbar-expand-lg sticky-nav navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../../index.html">
+          <a class="navbar-brand" href="./../../index.html">
             <span>
               <span style="color: #030304">Ugo</span>
               <span style="color: #1a9a9b">MONNIER</span>
             </span>
             <img
-              src="../../asset/logo.png"
+              src="./../../asset/logo.png"
               class="m-3"
               alt="..."
               width="60"
               height="60"
             />
           </a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -62,25 +56,82 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a
-                  class="nav-link text-black"
+                  class="nav-link active"
+                  style="color: #5454cd"
                   aria-current="page"
-                  href="./../../index.html"
+                  href="./index.html"
                   >Accueil</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown">
                 <a
-                  class="nav-link active"
-                  style="color: #5454cd"
+                  class="nav-link dropdown-toggle text-black"
                   href="./../index.html"
+                  >Expériences</a
                 >
-                  Expériences
-                </a>
+                <ul class="dropdown-menu" aria-labelledby="experiencesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../velcome-seo/index.html"
+                      >Velcome Seo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../conex-sante/index.html"
+                      >Conex Santé</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../scallog/index.html"
+                      >Scallog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../nokia/index.html"
+                      >Nokia</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../thales/index.html"
+                      >Thales</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="./../../projets/index.html"
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-black"
+                  href="./../../projets/index.html"
+                  id="projetsDropdown"
+                  role="button"
+                  aria-expanded="false"
                   >Projets</a
                 >
+                <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../../projets/web-design/index.html"
+                      >Web Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../../projets/peintures-genAI/index.html"
+                      >Peintures GenAI</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-black" href="#contact">Contact</a>
@@ -91,11 +142,10 @@
       </nav>
     </header>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="experience-section">
-      <h2 style="color: transparent; height: 50px"></h2>
+    <div style="color: transparent; height: 50px"></div>
+    <section id="experience" class="experience-section my-5">
       <div class="container">
-        <h2 class="text-center mb-4 experience-header animate-on-scroll">
+        <h2 class="text-center mb-5 experience-header animate-on-scroll">
           Mon Expérience chez <span class="highlight">Nokia</span> à Cuba
         </h2>
 
@@ -113,18 +163,19 @@
             </p>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 d-flex justify-content-end">
             <img
               src="./../../asset/Lonja_del_comercio.jpg"
               alt="Nokia à Cuba"
-              class="img-fluid animate-on-scroll"
+              class="img-fluid animate-on-scroll "
               style="max-width: 25rem"
             />
           </div>
         </div>
+        <div style="color: transparent; height: 50px"></div>
 
         <div class="row mt-5">
-          <div class="col-md-6">
+          <div class="col-md-6 d-flex justify-content-start">
             <img
               src="./../../asset/CRM-Salesforce-Tableau-de-bord.png"
               alt="Gestion Pipeline"
@@ -160,12 +211,13 @@
             </ul>
           </div>
         </div>
+        <div style="color: transparent; height: 50px"></div>
 
         <div class="row mt-5">
           <div class="col-md-6">
             <h4 class="animate-on-scroll">Présentation de solutions :</h4>
             <p class="animate-on-scroll">
-              En tant qu'expert avant-vente, j'étais chargé de la
+              En tant qu'ingénieur avant-vente, j'étais chargé de la
               <span class="highlight">présentation des solutions</span> Nokia
               aux clients, en mettant en valeur les aspects techniques et
               commerciaux. Ces présentations ont permis de renforcer la relation
@@ -174,7 +226,7 @@
             </p>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 d-flex justify-content-end">
             <img
               src="./../../asset/HMD.jpg"
               alt="Solutions Nokia"
@@ -186,7 +238,53 @@
       </div>
     </section>
 
+    <script>
+      (function () {
+        emailjs.init("user-id");
+      })();
 
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_q8ipw8n", "template-id", this).then(
+            function () {
+              alert("Votre message a été envoyé avec succès !");
+              document.getElementById("contact-form").reset();
+            },
+            function (error) {
+              alert("Erreur lors de l'envoi du message. Veuillez réessayer.");
+              console.error("Erreur :", error);
+            }
+          );
+        });
+
+      const projetsLink = document.getElementById("projetsDropdown");
+      const dropdownMenu = document.querySelector(".dropdown-menu");
+
+      projetsLink.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const isOpen = dropdownMenu.classList.contains("show");
+
+        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+          menu.classList.remove("show");
+        });
+
+        if (!isOpen) {
+          dropdownMenu.classList.add("show");
+        } else {
+          window.location.href = "./projets/index.html";
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!event.target.closest(".nav-item")) {
+          dropdownMenu.classList.remove("show");
+        }
+      });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script>
