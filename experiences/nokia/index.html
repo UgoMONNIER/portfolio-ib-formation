@@ -11,8 +11,6 @@
     />
     <link href="./../css/style-experiences.css" rel="stylesheet" />
     <style>
-
-
       .experience-section {
         background-color: #f8f9fa;
         padding: 60px 0;
@@ -71,37 +69,27 @@
                 >
                 <ul class="dropdown-menu" aria-labelledby="experiencesDropdown">
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../velcome-seo/index.html"
+                    <a class="dropdown-item" href="./../velcome-seo/index.html"
                       >Velcome Seo</a
                     >
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../conex-sante/index.html"
+                    <a class="dropdown-item" href="./../conex-sante/index.html"
                       >Conex Santé</a
                     >
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../scallog/index.html"
+                    <a class="dropdown-item" href="./../scallog/index.html"
                       >Scallog</a
                     >
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../nokia/index.html"
+                    <a class="dropdown-item" href="./../nokia/index.html"
                       >Nokia</a
                     >
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../thales/index.html"
+                    <a class="dropdown-item" href="./../thales/index.html"
                       >Thales</a
                     >
                   </li>
@@ -111,9 +99,6 @@
                 <a
                   class="nav-link dropdown-toggle text-black"
                   href="./../../projets/index.html"
-                  id="projetsDropdown"
-                  role="button"
-                  aria-expanded="false"
                   >Projets</a
                 >
                 <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
@@ -142,20 +127,21 @@
       </nav>
     </header>
 
+    <h2 style="color: transparent; height: 100px"></h2>
     <section class="bg-dark text-white text-center py-5">
-      <h2 style="color: transparent; height: 90px"></h2>
-
-    <div class="container">
-      <h1 class="animate-on-scroll">Ingénieur Avant-Vente à Cuba pour Nokia</h1>
-      <p class="lead animate-on-scroll">
-        Analyse des besoins clients, proposition technico-commerciale et suivi
-        des leads au sein de la représentation commerciale de Nokia à Cuba
-      </p>
-    </div>
-  </section>
+      <div class="container">
+        <h1 class="animate-on-scroll">
+          Ingénieur Avant-Vente à Cuba pour Nokia
+        </h1>
+        <p class="lead animate-on-scroll">
+          Analyse des besoins clients, proposition technico-commerciale et suivi
+          des leads au sein de la représentation commerciale de Nokia à Cuba
+        </p>
+      </div>
+    </section>
 
     <div style="color: transparent; height: 50px"></div>
-    <section id="experience" class="experience-section my-5 ">
+    <section id="experience" class="experience-section my-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -175,7 +161,7 @@
             <img
               src="./../../asset/Lonja_del_comercio.jpg"
               alt="Nokia à Cuba"
-              class="img-fluid animate-on-scroll "
+              class="img-fluid animate-on-scroll"
               style="max-width: 25rem"
             />
           </div>
@@ -246,53 +232,9 @@
       </div>
     </section>
 
-    <script>
-
-      const projetsLink = document.getElementById("projetsDropdown");
-      const dropdownMenu = document.querySelector(".dropdown-menu");
-
-      projetsLink.addEventListener("click", function (event) {
-        event.preventDefault();
-
-        const isOpen = dropdownMenu.classList.contains("show");
-
-        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-          menu.classList.remove("show");
-        });
-
-        if (!isOpen) {
-          dropdownMenu.classList.add("show");
-        } else {
-          window.location.href = "./projets/index.html";
-        }
-      });
-
-      document.addEventListener("click", (event) => {
-        if (!event.target.closest(".nav-item")) {
-          dropdownMenu.classList.remove("show");
-        }
-      });
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script>
-      const animateOnScrollElements =
-        document.querySelectorAll(".animate-on-scroll");
-
-      const animateElements = () => {
-        animateOnScrollElements.forEach((element) => {
-          const elementPosition = element.getBoundingClientRect().top;
-          const viewportHeight = window.innerHeight;
-
-          if (elementPosition < viewportHeight - 100) {
-            gsap.to(element, { opacity: 1, y: 0, duration: 1 });
-          }
-        });
-      };
-
-      window.addEventListener("scroll", animateElements);
-      window.addEventListener("load", animateElements);
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="./../../js/index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

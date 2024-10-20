@@ -100,9 +100,6 @@
                 <a
                   class="nav-link dropdown-toggle text-black"
                   href="./../projets/index.html"
-                  id="projetsDropdown"
-                  role="button"
-                  aria-expanded="false"
                   >Projets</a
                 >
                 <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
@@ -904,53 +901,8 @@
       <a href="./../../index.html" class="btn btn-light">Retour à l'accueil</a>
     </footer>
 
-    <script>
-      (function () {
-        emailjs.init("user-id");
-      })();
-
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          emailjs.sendForm("service_q8ipw8n", "template-id", this).then(
-            function () {
-              alert("Votre message a été envoyé avec succès !");
-              document.getElementById("contact-form").reset();
-            },
-            function (error) {
-              alert("Erreur lors de l'envoi du message. Veuillez réessayer.");
-              console.error("Erreur :", error);
-            }
-          );
-        });
-
-      const projetsLink = document.getElementById("projetsDropdown");
-      const dropdownMenu = document.querySelector(".dropdown-menu");
-
-      projetsLink.addEventListener("click", function (event) {
-        event.preventDefault();
-
-        const isOpen = dropdownMenu.classList.contains("show");
-
-        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-          menu.classList.remove("show");
-        });
-
-        if (!isOpen) {
-          dropdownMenu.classList.add("show");
-        } else {
-          window.location.href = "./projets/index.html";
-        }
-      });
-
-      document.addEventListener("click", (event) => {
-        if (!event.target.closest(".nav-item")) {
-          dropdownMenu.classList.remove("show");
-        }
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="./../js/index.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

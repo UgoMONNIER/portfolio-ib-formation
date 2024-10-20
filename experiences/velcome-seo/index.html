@@ -853,24 +853,7 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script>
-      const animateOnScrollElements =
-        document.querySelectorAll(".animate-on-scroll");
-
-      const animateElements = () => {
-        animateOnScrollElements.forEach((element) => {
-          const elementPosition = element.getBoundingClientRect().top;
-          const viewportHeight = window.innerHeight;
-
-          if (elementPosition < viewportHeight - 100) {
-            gsap.to(element, { opacity: 1, y: 0, duration: 1 });
-          }
-        });
-      };
-
-      window.addEventListener("scroll", animateElements);
-      window.addEventListener("load", animateElements);
-    </script>
+    <script src="./../../js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
   <footer class="bg-dark text-white text-center py-3">
