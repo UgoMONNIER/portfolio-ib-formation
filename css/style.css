@@ -147,72 +147,40 @@ p {
 
 @media (min-width: 832px) {
 
-  .colored-rectangle {
+  .abs {
+    position: absolute;
+  }
+  
+  .rectangle {
     position: relative;
-    top: 17rem;
-    left: 25rem;
-    box-shadow:
-    rgba(181, 254, 254, 0.3) 0px 7px 29px 0px;
+    box-shadow: rgba(181, 254, 254, 0.3) 0px 7px 29px 0px;
     background-color: rgba(255, 255, 255, 0.418) !important;
     backdrop-filter: blur(10px);
     background: linear-gradient(135deg,
         rgba(167, 144, 247, 0.5),
         rgba(31, 214, 214, 0.5));
-    width: 4rem;
-    height: 1rem;
   }
   
   .colored-grd-rectangle {
-    position: relative;
-    top: 7rem;
+    top: 10rem;
     left: 17rem;
-    z-index :0;
-    box-shadow:
-    rgba(181, 254, 254, 0.3) 0px 7px 29px 0px;
-    background-color: rgba(255, 255, 255, 0.418) !important;
-    backdrop-filter: blur(10px);
-    background: linear-gradient(135deg,
-        rgba(167, 144, 247, 0.5),
-        rgba(31, 214, 214, 0.5));
     width: 9rem;
-    height: 2rem;
+    height: 1.5rem;
   }
   
   .colored-rectangle {
-    position: relative;
     top: 16rem;
     left: 12rem;
-    z-index :2;
-    box-shadow:
-    rgba(181, 254, 254, 0.3) 0px 7px 29px 0px;
-    background-color: rgba(255, 255, 255, 0.418) !important;
-    backdrop-filter: blur(10px);
-    background: linear-gradient(135deg,
-        rgba(167, 144, 247, 0.5),
-        rgba(31, 214, 214, 0.5));
     width: 5rem;
     height: 1rem;
   }
   
-  
   .colored-petit-rectangle {
-    position: relative;
     top: 17rem;
     left: 18rem;
-    z-index :2;
-    box-shadow:
-    rgba(181, 254, 254, 0.3) 0px 7px 29px 0px;
-    background-color: rgba(255, 255, 255, 0.418) !important;
-    backdrop-filter: blur(10px);
-    background: linear-gradient(135deg,
-        rgba(167, 144, 247, 0.5),
-        rgba(31, 214, 214, 0.5));
     width: 2rem;
     height: 0.5rem;
   }
   
-  .abs {
-    position: absolute;
-  }
 
 }
