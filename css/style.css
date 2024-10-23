@@ -154,11 +154,11 @@ p {
   .rectangle {
     position: relative;
     box-shadow: rgba(181, 254, 254, 0.3) 0px 7px 29px 0px;
-    background-color: rgba(255, 255, 255, 0.418) !important;
+    background-color: rgba(255, 255, 255, 0.418);
     backdrop-filter: blur(10px);
     background: linear-gradient(135deg,
-        rgba(167, 144, 247, 0.5),
-        rgba(31, 214, 214, 0.5));
+    rgba(167, 144, 247, 0.5),
+    rgba(31, 214, 214, 0.5));
   }
   
   .colored-grd-rectangle {
@@ -166,6 +166,50 @@ p {
     left: 17rem;
     width: 9rem;
     height: 1.5rem;
+  }
+
+  .colored-blured-rectangle {
+    box-shadow: none;
+    top: 10rem;
+    left: 17rem;
+    filter : blur(5px);
+    width: 20rem;
+    height: 10rem;
+    background-color: transparent;
+    background: none;
+  }
+
+  .colored-blured-rectangle-petit-1 {
+    box-shadow: none;
+    top: 7rem;
+    left: 16rem;
+    filter : blur(5px);
+    width: 12rem;
+    height: 6rem;
+    background-color: transparent;
+    background: none;
+  }
+
+  .colored-blured-rectangle-petit-2 {
+    box-shadow: none;
+    top: 17rem;
+    left: 4rem;
+    filter : blur(5px);
+    width: 9rem;
+    height: 3rem;
+    background-color: transparent;
+    background: none;
+  }
+
+  .colored-blured-rectangle-petit-3 {
+    box-shadow: none;
+    top: -8rem;
+    left: 20rem;
+    filter : blur(5px);
+    width: 12rem;
+    height: 4rem;
+    background-color: transparent;
+    background: none;
   }
   
   .colored-rectangle {
@@ -183,4 +227,39 @@ p {
   }
   
 
+}
+
+
+.skills-hero, .h1-hero, .p-hero{
+  padding: 1rem;
+  background-color: transparent;
+  backdrop-filter : blur(10px);
+}
+
+canvas {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100wh;
+} 
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+canvas {
+  background-color: #000;
+  display: block;
 }
