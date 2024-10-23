@@ -171,50 +171,6 @@ canvas {
     height: 1.5rem;
   }
 
-  .colored-blured-rectangle {
-    box-shadow: none;
-    top: 10rem;
-    left: 17rem;
-    filter : blur(5px);
-    width: 20rem;
-    height: 10rem;
-    background-color: transparent;
-    background: none;
-  }
-
-  .colored-blured-rectangle-petit-1 {
-    box-shadow: none;
-    top: 7rem;
-    left: 16rem;
-    filter : blur(5px);
-    width: 12rem;
-    height: 6rem;
-    background-color: transparent;
-    background: none;
-  }
-
-  .colored-blured-rectangle-petit-2 {
-    box-shadow: none;
-    top: 17rem;
-    left: 4rem;
-    filter : blur(5px);
-    width: 9rem;
-    height: 3rem;
-    background-color: transparent;
-    background: none;
-  }
-
-  .colored-blured-rectangle-petit-3 {
-    box-shadow: none;
-    top: -8rem;
-    left: 20rem;
-    filter : blur(5px);
-    width: 12rem;
-    height: 4rem;
-    background-color: transparent;
-    background: none;
-  }
-  
   .colored-rectangle {
     top: 16rem;
     left: 12rem;
@@ -228,8 +184,6 @@ canvas {
     width: 2rem;
     height: 0.5rem;
   }
-  
-
   
   
   .skills-hero, .h1-hero, .p-hero{
@@ -267,3 +221,9 @@ canvas {
   }
 }
 
+@media (max-width: 832px) {
+
+  .hero, .h3-hero, .h1-hero, .p-hero{
+    color: black!important;
+  }
+}
