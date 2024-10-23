@@ -144,6 +144,9 @@ p {
   transform: translateY(30px);
 }
 
+canvas {
+  display: none
+}
 
 @media (min-width: 832px) {
 
@@ -227,39 +230,40 @@ p {
   }
   
 
+  
+  
+  .skills-hero, .h1-hero, .p-hero{
+    padding: 1rem;
+    background-color: transparent;
+    backdrop-filter : blur(10px);
+  }
+  
+  canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100wh;
+  } 
+  
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+  
+  canvas {
+    background-color: #000;
+    display: block;
+  }
 }
 
-
-.skills-hero, .h1-hero, .p-hero{
-  padding: 1rem;
-  background-color: transparent;
-  backdrop-filter : blur(10px);
-}
-
-canvas {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100wh;
-} 
-
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
-
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-}
-
-canvas {
-  background-color: #000;
-  display: block;
-}
