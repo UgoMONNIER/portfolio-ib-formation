@@ -42,7 +42,7 @@ const sphereMaterial = new THREE.MeshStandardMaterial({
 const spheres = [];
 const speeds = []; 
 
-for (let i = 0; i < 18; i++) {
+for (let i = 0; i < 11; i++) {
   const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
   sphere.position.set(
     (Math.random() - 0.5) * 4,
