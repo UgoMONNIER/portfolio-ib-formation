@@ -63,11 +63,11 @@ const light1 = new THREE.PointLight(0x1a9a9b, 1, 50); // Lumière 1
 light1.position.set(0, 5, 5);
 scene.add(light1);
 
-const light2 = new THREE.PointLight(0x1a9a9b, 0.5, 50); // Lumière 2
+const light2 = new THREE.PointLight(0x1a9a9b, 0.6, 50); // Lumière 2
 light2.position.set(5, 0, 0);
 scene.add(light2);
 
-const light3 = new THREE.PointLight(0x1a9a9b, 0.5, 50); // Lumière 3
+const light3 = new THREE.PointLight(0x1a9a9b, 0.6, 50); // Lumière 3
 light3.position.set(-5, 0, 0);
 scene.add(light3);
 

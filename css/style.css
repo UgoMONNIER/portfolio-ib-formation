@@ -153,17 +153,17 @@ canvas {
   .abs {
     position: absolute;
   }
-  
+
   .rectangle {
     position: relative;
     box-shadow: rgba(181, 254, 254, 0.3) 0px 7px 29px 0px;
     background-color: rgba(255, 255, 255, 0.418);
     backdrop-filter: blur(10px);
     background: linear-gradient(135deg,
-    rgba(167, 144, 247, 0.5),
-    rgba(31, 214, 214, 0.5));
+        rgba(167, 144, 247, 0.5),
+        rgba(31, 214, 214, 0.5));
   }
-  
+
   .colored-grd-rectangle {
     top: 10rem;
     left: 17rem;
@@ -177,37 +177,38 @@ canvas {
     width: 5rem;
     height: 1rem;
   }
-  
+
   .colored-petit-rectangle {
     top: 17rem;
     left: 18rem;
     width: 2rem;
     height: 0.5rem;
   }
-  
-  
-  .skills-hero, .h1-hero, .p-hero{
+
+
+  .skills-hero,
+  .h1-hero,
+  .p-hero {
     padding: 1rem;
-    backdrop-filter : blur(15px);
-    background-color: #5a5a5a4b;
-border-radius: 10px;
+    backdrop-filter: blur(15px);
+    background-color: #0c0c0c3d;
+    border-radius: 10px;
   }
-  
+
   canvas {
     position: relative;
     top: 0;
     left: 0;
     z-index: -1;
     width: 100wh;
-  } 
-  
-  
+  }
+
   body,
   html {
     margin: 0;
     padding: 0;
   }
-  
+
   .hero {
     position: relative;
     display: flex;
@@ -215,9 +216,11 @@ border-radius: 10px;
     align-items: center;
     background-color: #000;
   }
-  
+
   canvas {
-    background-color: #000;
+    background: linear-gradient(135deg,
+        rgba(101, 58, 255, 0.5),
+        rgba(13, 116, 116, 0.5));
     display: block;
   }
 
@@ -226,7 +229,10 @@ border-radius: 10px;
 
 @media (max-width: 832px) {
 
-  .hero, .h3-hero, .h1-hero, .p-hero{
-    color: black!important;
+  .hero,
+  .h3-hero,
+  .h1-hero,
+  .p-hero {
+    color: black !important;
   }
 }
