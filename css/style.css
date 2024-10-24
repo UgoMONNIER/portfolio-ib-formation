@@ -188,8 +188,9 @@ canvas {
   
   .skills-hero, .h1-hero, .p-hero{
     padding: 1rem;
-    background-color: transparent;
-    backdrop-filter : blur(10px);
+    backdrop-filter : blur(15px);
+    background-color: #5a5a5a4b;
+border-radius: 10px;
   }
   
   canvas {
@@ -219,6 +220,8 @@ canvas {
     background-color: #000;
     display: block;
   }
+
+
 }
 
 @media (max-width: 832px) {
