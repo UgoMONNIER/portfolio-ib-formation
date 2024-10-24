@@ -164,23 +164,16 @@ canvas {
         rgba(31, 214, 214, 0.5));
   }
 
-  .colored-grd-rectangle {
-    top: 10rem;
-    left: 17rem;
-    width: 9rem;
-    height: 1.5rem;
-  }
-
   .colored-rectangle {
-    top: 16rem;
+    top: 18rem;
     left: 12rem;
     width: 5rem;
     height: 1rem;
   }
 
   .colored-petit-rectangle {
-    top: 17rem;
-    left: 18rem;
+    top: 19rem;
+    left: 11rem;
     width: 2rem;
     height: 0.5rem;
   }
@@ -188,19 +181,20 @@ canvas {
 
   .skills-hero,
   .h1-hero,
+  .h3-hero,
   .p-hero {
     padding: 1rem;
     backdrop-filter: blur(15px);
-    background-color: #0c0c0c3d;
+    background-color: #0c0c0c00;
     border-radius: 10px;
+    
   }
 
   canvas {
     position: relative;
     top: 0;
-    left: 0;
+    left: 0.01rem;
     z-index: -1;
-    width: 100wh;
   }
 
   body,
@@ -219,8 +213,8 @@ canvas {
 
   canvas {
     background: linear-gradient(135deg,
-        rgba(101, 58, 255, 0.5),
-        rgba(13, 116, 116, 0.5));
+        rgb(31, 14, 93),
+        rgb(4, 44, 44));
     display: block;
   }
 
@@ -236,3 +230,29 @@ canvas {
     color: black !important;
   }
 }
+
+#hero-canvas{
+  width : 99.1vw !important;
+  height : 70rem !important;
+}
+
+@media (max-width: 1657px) {
+
+  #hero-canvas{
+    width : 98.9vw !important;
+  }
+}
+
+@media (max-width: 1355px) {
+
+  #hero-canvas{
+    width : 98.7vw !important;
+  }
+}
+@media (max-width: 1147px) {
+
+  #hero-canvas{
+    width : 98.3vw !important;
+  }
+}
+
